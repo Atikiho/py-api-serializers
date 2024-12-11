@@ -129,6 +129,7 @@ class MovieSessionSerializer(serializers.ModelSerializer):
             "cinema_hall",
             "movie",
         )
+        read_only_fields = ("id",)
 
 
 class MovieSessionDetailSerializer(serializers.ModelSerializer):
